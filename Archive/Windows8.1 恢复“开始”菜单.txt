@@ -1,0 +1,13 @@
+恢复“开始”菜单
+
+如果您不喜欢Metro用户界面，那么可以通过以下方式去恢复到一个更加传统的Windows外观：启动REGEDIT(注册表)然后浏览至 HKEY_CURRENT_USERSoftwareMicrosoftWindowsCurrentVersionExplorer，双击 RPEnabled，然后将其参数值自1调为0是去移除Metro、新任务栏和新开始菜单等。
+
+另外，设置RPEnabled的参数值为2是移除Metro，恢复开始菜单并且保留Windows 8中大多数的其他改进。
+
+.reg
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+
+"RPEnabled"=dword:00000000
