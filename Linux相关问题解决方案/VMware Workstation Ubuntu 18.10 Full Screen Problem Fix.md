@@ -4,7 +4,7 @@ Install:
 
 ```
 sudo apt purge open-vm-tools
-sudo apt update
+sudo apt upgrade
 sudo apt install open-vm-tools open-vm-tools-desktop
 ```
 
