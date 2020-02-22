@@ -15,6 +15,8 @@
 > 1. 卸载原有jre
 > 2. 或，将`Path`中“JAVA_HOME%\bin”条目上移至第一项，并保存
 > ```
+> cmd或powershell测试命令
+> 
 > java -version
 > ```
 

@@ -22,4 +22,6 @@
 
 **netsh wlan show profile \* key=clear**
 
-注意通配符“*”前后的空格不要漏掉。
+注意通配符“\*”前后的空格不要漏掉。
+
+netsh wlan delete profile name="Mixsx's"
