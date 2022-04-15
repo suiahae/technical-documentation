@@ -1,0 +1,16 @@
+计算机\HKEY_USERS\k\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\2233
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+在右边窗口中修改DWORD值——NoDrives的数值。
+数值设置方法：
+0 ：不隐藏驱动器
+3：隐藏A、B驱动器 （软驱）
+4：隐藏C盘
+7：隐藏ABC盘
+8：隐藏D盘
+12：隐藏CD盘（十进制）
+15：隐藏ABCD盘（十进制）
+16：隐藏E盘 （十进制）
+规律：假设要隐藏的盘符为第n个字母，那么在这里设置的数值为2的n次方减1；
+假设要隐藏多个磁盘分区，在这里设置的数值为这些分区所对应的数值代号的和。如，隐藏ABCD分区时，数值为：
+2的零次方 + 2的一次方 + 2的二次方 + 2的三次方
